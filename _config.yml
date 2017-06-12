@@ -71,7 +71,7 @@ share_jia: true
 duoshuo: false
 
 #2、网易云跟帖
-wangyiyun: false
+wangyiyun: e9059ace31a2438fb32e80e1cdbd5570
 
 #3、畅言
 changyan_appid: false
