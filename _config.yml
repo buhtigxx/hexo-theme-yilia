@@ -2,14 +2,14 @@
 
 menu:
   主页: /
-  随笔: /tags/随笔/
+  # 随笔: /tags/
 
 # SubNav
 subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
+  # github: "#"
+  # weibo: "#"
+  # rss: "#"
+  # zhihu: "#"
   #qq: "#"
   #weixin: "#"
   #jianshu: "#"
@@ -43,9 +43,9 @@ open_in_new: false
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
-reward_type: 2
+reward_type: 0
 # 打赏wording
-reward_wording: '谢谢你请我吃糖果'
+#reward_wording: '谢谢你请我吃糖果'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
 alipay: 
 # 微信二维码图片地址
@@ -67,8 +67,25 @@ baidu_analytics: ''
 google_analytics: ''
 favicon: /favicon.png
 
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
 #你的头像url
-avatar:
+avatar: "img/avatar.png"
 
 #是否开启分享
 share_jia: true
@@ -81,7 +98,7 @@ share_jia: true
 duoshuo: false
 
 #2、网易云跟帖
-wangyiyun: 'e9059ace31a2438fb32e80e1cdbd5570'
+#wangyiyun: 'e9059ace31a2438fb32e80e1cdbd5570'
 
 #3、畅言
 changyan_appid: false
@@ -89,14 +106,17 @@ changyan_conf: false
 
 #4、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
 disqus: false
+deploy:
+    type: git
+    repo: git@git.coding.net:gnidocxx/gnidocxx.git
+    branch: master 
 
 #5、Gitment
-gitment_owner: false      #你的 GitHub ID
-gitment_repo: ''          #存储评论的 repo
+gitment_owner: 'buhtigxx' #false      #你的 GitHub ID
+gitment_repo: 'blogComment'
 gitment_oauth:
-  client_id: ''           #client ID
-  client_secret: ''       #client secret
-
+    client_id: '4e14baf54f344b288de0'           #client ID
+    client_secret: '6b0ac19cef2c7d76357cf49e430c99dedca383d9'
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
   # 头像上面的背景颜色
@@ -107,24 +127,17 @@ style:
 # slider的设置
 slider:
   # 是否默认展开tags板块
-  showTags: false
+  showTags: true
 
 # 智能菜单
 # 如不需要，将该对应项置为false
 # 比如
-#smart_menu:
-#  friends: false
 smart_menu:
   innerArchive: '所有文章'
-  friends: '友链'
+#  friends: '友链'
   aboutme: '关于我'
 
-friends:
-  友情链接1: http://localhost:4000/
-  友情链接2: http://localhost:4000/
-  友情链接3: http://localhost:4000/
-  友情链接4: http://localhost:4000/
-  友情链接5: http://localhost:4000/
-  友情链接6: http://localhost:4000/
+#friends:
+#  友情链接1: http://localhost:4000/
 
-aboutme: 懒人
+aboutme: 故不忧
